@@ -1,156 +1,98 @@
 body{
-	background-color: white;
-	width: 1020px;
-	margin: 0 auto;
-	padding: 0;
-	box-sizing: border-box;
-	background-color: black;
+width: 1020px;
+margin: 0 auto;
+padding: 0;
+box-sizing: border-box;
+background-color: black;
+color: white !important;
 }
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
+
 
 header{
-	display: block;
-	background-color: #323232;
-	height: 60px;
+width:100%;
+height: 60px;
+background: #323232;
 }
-nav{
-	position: relative;
-	width: 500px;
-	height: 60px;
-	background-color: #323232;
-	margin: 0 auto;
-}
-nav ul {
-	display: flex;
-	height: inherit;
-	text-transform : uppercase;
-	justify-content: space-between;
-	align-items: center;
-	color: white;
-} 
 
-ul li:nth-child(2) {
-	margin-right: 135px;
+a{
+  color:#fff;
+  text-decoration: none;
+
 }
-.pointy_singy{
-    border: 100px solid transparent;
-    border-top: 100px solid  #323232;
-    position: absolute;
-    left: 144px;
- }
+
+.menu{
+  height: 100%;
+  text-transform: uppercase;
+  max-width: 1024px;
+  margin:0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.menu_left_part{
+  display: flex;
+  justify-content: flex-start;
+  
+}
+
+.menu_center_part{
+  display: flex;
+  align-self: flex-end;
+}
+
+.menu_right_part{
+  display: flex;
+  justify-content: flex-end;
+}
+.menu_left_part>a, .menu_right_part>a{
+  padding: 0 20px;
+  font-size: 12px;
+  font-family: "Lato";
+  font-weight: bold;
+}
+.logotype{
+    background:url("./img/logo_triangle.png");
+    width:60px;
+    height: 50px;
+    display: inline-block;
+    margin:0 40px;
+    background-size: 100%;
+}
+
+
+.triangle{
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 27px 45px 0 45px;
+  border-color: #323232 white white white;
+  margin:0 auto;
+  z-index: 1;
+  position: relative;
+}
+  }
 main{
-    display: block;
-    background-color: yellow;
-    height: 1630px;
+  display: block;
+  background-color: yellow;
+  height: 1630px;
 }
 .protfolio{
-	height: 625px;
-	background-color: #ffffff;
+height: 625px;
+background-color: #ffffff;
 }
 .about_me{
-	height: 440px;
-	background-color: #2eb398;
+height: 440px;
+background-color: #2eb398;
 }
 .get_in_touch{
-  height: 565px;
-  background-color: #323232;
+height: 565px;
+background-color: #323232;
 }
 
 footer{
-	display: block;
-	background-color: #222222;
-	height: 40px;
-
+display: block;
+background-color: #222222;
+height: 40px;
 }
-
-
-
-/*
-.Header {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1020px;
-  height: 1732px;
-  z-index: 105;
-}
-.Logo {
-  background-image: url("Logo.png");
-  position: absolute;
-  left: 477px;
-  top: 10px;
-  width: 64px;
-  height: 55px;
-  z-index: 104;
-}
-.BLOG______·______GET_IN_TOUCH {
-  font-size: 7.214px;
-  font-family: "Lato";
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  line-height: 0.632;
-  text-align: justifyLeft;
-  -moz-transform: matrix( 1.3468753916099,0,0,1.3862334687077,0,0);
-  -webkit-transform: matrix( 1.3468753916099,0,0,1.3862334687077,0,0);
-  -ms-transform: matrix( 1.3468753916099,0,0,1.3862334687077,0,0);
-  position: absolute;
-  left: 599.068px;
-  top: 33.72px;
-  z-index: 103;
-}
-.PORTFOLIO______·______ABOUT {
-  font-size: 7.214px;
-  font-family: "Lato";
-  color: rgb(46, 179, 152);
-  font-weight: bold;
-  line-height: 0.632;
-  text-align: justifyLeft;
-  -moz-transform: matrix( 1.3468753916099,0,0,1.3862334687077,0,0);
-  -webkit-transform: matrix( 1.3468753916099,0,0,1.3862334687077,0,0);
-  -ms-transform: matrix( 1.3468753916099,0,0,1.3862334687077,0,0);
-  position: absolute;
-  left: 344.893px;
-  top: 33.72px;
-  z-index: 102;
-}
-.Header {
-  background-color: rgb(50, 50, 50);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 1020px;
-  height: 63px;
-  z-index: 101;
-}
-.Pointy_Thingy {
-  background-color: rgb(50, 50, 50);
-  position: absolute;
-  left: 420px;
-  top: -117px;
-  width: 180px;
-  height: 206px;
-  z-index: 100;
-}
-.Sep_Left {
-  background-color: rgb(228, 233, 235);
-  position: absolute;
-  left: 30px;
-  top: 74px;
-  width: 410px;
-  height: 1px;
-  z-index: 99;
-}
-.Sep_Right {
-  background-color: rgb(228, 233, 235);
-  position: absolute;
-  left: 580px;
-  top: 74px;
-  width: 410px;
-  height: 1px;
-  z-index: 98;
-}
-*/
